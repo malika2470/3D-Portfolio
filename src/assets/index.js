@@ -12,6 +12,12 @@ import reactImage from "./tech/react.png";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import AI from "./AI.png"; 
+import ML from "./ML.png"; 
+import NLP from "./NLP.png"; 
+import CC from "./CC.png"; 
+import QA from "./QA.png"
+
 
 // Exporting all imported images
 export {
@@ -24,6 +30,11 @@ export {
   pythonImage,
   reactImage,
   logo,
-  menu,   // Updated to 'menu', 'close' from the correct file
-  close   // There is no 'reactLogo' in the directory provided
+  menu,   
+  close,
+  AI,
+  ML,
+  CC,
+  NLP,
+  QA
 };
