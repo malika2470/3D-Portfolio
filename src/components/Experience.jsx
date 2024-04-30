@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import "react-vertical-timeline-component/style.min.css"; // You can remove this if not using VerticalTimeline
+import "react-vertical-timeline-component/style.min.css"; 
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -43,13 +43,13 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <div className="experience-container" style={{ backgroundColor: 'black' }}>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           {/* Insert any descriptive text here if needed */}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          Experience.
         </h2>
       </motion.div>
 
@@ -61,7 +61,7 @@ const Experience = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

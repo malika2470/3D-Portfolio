@@ -33,20 +33,18 @@ const ServiceCard = ({ index, title, icon }) => (
     </motion.div>
   </Tilt>
 );
-
-
 const About = () => {
   return (
-    <div className="min-h-screen"> 
+    <div className="min-h-screen" style={{ backgroundColor: 'black' }}> 
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}></p>
+        <h2 className={styles.sectionHeadText}></h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Hello, motivated student bruh just give me a job in TECH
+        Below are some of the areas I'm interested in and learning!
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
@@ -58,4 +56,5 @@ const About = () => {
 }
 
 export default About;
+
 

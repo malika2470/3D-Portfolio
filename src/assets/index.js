@@ -17,6 +17,7 @@ import ML from "./ML.png";
 import NLP from "./NLP.png"; 
 import CC from "./CC.png"; 
 import QA from "./QA.png"
+import github from "./github.png";
 
 
 // Exporting all imported images
@@ -36,5 +37,6 @@ export {
   ML,
   CC,
   NLP,
-  QA
+  QA,
+  github
 };

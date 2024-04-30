@@ -18,7 +18,7 @@ const Hero = () => {
             Welcome!, I'm <span className='text-[#915EFF]'>Malika</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I'm deeply passionate about the transformative power of Artificial Intelligence, Machine Learning, Natural Language Processing, and Cloud Computing.  <br className='sm:block hidden' />
+            <br className='sm:block hidden' />
             
           </p>
         </div>

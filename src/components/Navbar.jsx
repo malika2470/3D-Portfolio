@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { logo, menu, close } from "../assets";
-import { navLinks } from "../constants";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -20,7 +18,6 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -36,31 +33,14 @@ const Navbar = () => {
         <Link
           to='/'
           className='flex items-center gap-2'
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
+          onClick={() => window.scrollTo(0, 0)}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Malika &nbsp;
-            <span className='sm:block hidden'> | 4th Year Student</span>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
+            Malika&nbsp;
+            <span className='sm:block hidden'> | Student at WLU</span>
           </p>
         </Link>
-
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
@@ -75,22 +55,7 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
+            {/* Mobile Menu Placeholder, possibly for future use */}
           </div>
         </div>
       </div>
@@ -99,6 +64,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-

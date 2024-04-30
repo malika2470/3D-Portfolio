@@ -3,6 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+  background-color: black; /* Set the background color of the body to black */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
 
 * {
   margin: 0;

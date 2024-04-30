@@ -4,9 +4,9 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: 'black' }}>  /
       {/* Title section */}
-      <h2 className="text-center text-2xl font-bold my-10">Technologies I Know:</h2>
+      <h2 className="text-center text-2xl font-bold my-10 text-white">Technologies I Know:</h2>
 
       {/* Technology grid */}
       <div className="flex flex-row flex-wrap justify-center gap-10">
@@ -24,3 +24,6 @@ const Tech = () => {
 };
 
 export default Tech;
+
+
+

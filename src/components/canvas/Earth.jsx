@@ -1,9 +1,7 @@
-import React from 'react'
+import Spline from '@splinetool/react-spline';
 
-const Earth = () => {
+export default function App() {
   return (
-    <div>Earth</div>
-  )
+    <Spline scene="https://prod.spline.design/3KOGiTpOSp85CrQF/scene.splinecode" />
+  );
 }
-
-export default Earth

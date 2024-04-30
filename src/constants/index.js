@@ -105,9 +105,6 @@ import {
     },
   
   ];
-  
-  
-  
   const projects = [
     {
       name: "Car Rent",
@@ -171,4 +168,6 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  
+  
+  export {services, technologies, experiences, projects };
